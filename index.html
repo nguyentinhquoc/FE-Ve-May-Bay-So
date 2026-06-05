@@ -161,7 +161,7 @@
                             <div id="quantity-modal"
                                 class="w-90 hidden bg-white flex flex-col gap-8 max-w-[960px] p-6 shadow-[0px_8px_30px_rgba(0,0,0,0.15)] modal absolute top-8 max-xl:right-0 max-xl:left-auto max-sm:right-auto max-sm:left-0 max-sm:w-[73vw] left-0 z-9999 text-text-primary">
                                 <button
-                                    class="absolute top-0 font-bold text-white bg-accent p-1 rounded-2xl cursor-pointer"
+                                    class="absolute top-0 font-bold p-3 rounded-2xl cursor-pointer"
                                     style="right:2px;"
                                     onclick="this.closest('.modal').classList.add('hidden')">X</button>
 
@@ -324,9 +324,9 @@
                     </div>
                 </form>
                 <div id="location-modal"
-                    class="hidden w-3xl modal bg-white flex flex-col gap-2 p-6 shadow-[0px_8px_30px_rgba(0,0,0,0.15)] absolute left-10 right-10 z-9999 text-text-primary max-lg:fixed max-lg:left-0 max-lg:bottom-0 max-lg:right-0 max-lg:top-0 max-lg:w-screen max-sm:p-3 overflow-y-scroll max-lg:max-h-screen">
+                    class="hidden w-3xl modal bg-white flex flex-col gap-2 p-6 shadow-[0px_8px_30px_rgba(0,0,0,0.15)] absolute left-10 right-10 z-9999 text-text-primary max-lg:fixed max-lg:left-0 max-lg:bottom-0 max-lg:right-0 max-lg:top-0 max-lg:w-screen max-sm:p-3 overflow-y-scroll ">
                     <button
-                        class="absolute top-0 font-bold text-white bg-accent p-1 rounded-2xl cursor-pointer"
+                        class="absolute top-0 font-bold p-2 rounded-2xl cursor-pointer"
                         style="right:2px;"
                         onclick="this.closest('.modal').classList.add('hidden')">X</button>
                     <div
@@ -526,7 +526,7 @@
                     class="hidden modal max-lg:overflow-y-scroll  calendar-wrapper bg-white text-black flex flex-col gap-6 max-w-[760px] w-fit p-5 shadow-[0px_8px_30px_rgba(0,0,0,0.15)] absolute left-10 z-9999 max-sm:p-3 max-lg:fixed max-lg:left-0 max-lg:right-0 max-lg:top-0  max-lg:bottom-0 max-lg:w-screen"
                     id="date-modal">
                     <button
-                        class="absolute top-0 font-bold text-white bg-accent p-1 rounded-2xl cursor-pointer"
+                        class="absolute top-0 font-bold p-3 rounded-2xl cursor-pointer"
                         style="right:2px;"
                         onclick="this.closest('.modal').classList.add('hidden')">X</button>
 
@@ -1206,6 +1206,120 @@
                                     data-codeairline="VN"
                                     data-price="6020000,0000"
                                     style="margin-bottom: 15px; display: block; min-height: 150px;">
+
+                                       <!-- Modal hành trình bay -->
+                                    <div class="modal-journey hidden" style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5);  align-items: center; justify-content: center; z-index: 99999;">
+                                        <div class="bg-white rounded-lg max-w-2xl w-full mx-4 p-6" style="max-height: 90vh; overflow-y: auto;">
+                                            <!-- Header -->
+                                            <div class="flex justify-between items-start mb-4">
+                                                <div>
+                                                    <h2 class="text-2xl font-bold mb-2">Hanoi - London</h2>
+                                                    <p class="text-sm text-gray-600">Khởi hành vào Thứ Năm 16 tháng 12 2025</p>
+                                                    <p class="text-sm text-gray-600">Đến vào Thứ Tư 17 tháng 12 2025</p>
+                                                    <p class="text-sm font-semibold text-gray-700 mt-1">Tổng thời gian: 17 giờ 40 phút</p>
+                                                </div>
+                                                <button class="close-modal text-3xl font-bold cursor-pointer text-gray-500 hover:text-gray-700">×</button>
+                                            </div>
+
+                                            <!-- Timeline -->
+                                            <div class="relative flex flex-col gap-3">
+                                                <!-- Segment 1 -->
+                                                <div class="flex gap-6 pb-8 relative ">
+                                                    <!-- Time column -->
+                                                    <div class="text-right pt-2" style="min-width: 80px;">
+                                                        <p class="text-2xl font-bold text-accent">20:00</p>
+                                                        <p class="text-sm text-gray-600">16 tháng 12</p>
+                                                    </div>
+
+                                                    <!-- Divider with icon -->
+                                                    <div class="flex flex-col items-center" style="min-width: 30px;">
+                                                        <img src="image/plane_start.svg" alt="" class="w-6 h-6 mb-2">
+                                                        <div class="flex-1 border-l-2 border-dashed border-gray-300" style="height: 120px;"></div>
+                                                    </div>
+
+                                                    <!-- Info column -->
+                                                    <div class="flex-1 pt-2">
+                                                        <h3 class="font-bold text-lg mb-2">Sân bay Nội Bài, HAN</h3>
+                                                        <p class="text-sm text-gray-600">Nhà ga 2</p>
+                                                        <p class="text-sm text-gray-600">7 giờ 35 phút</p>
+                                                        <p class="text-sm text-gray-600">EY 431</p>
+                                                        <p class="text-sm text-gray-600">Etihad</p>
+                                                        <p class="text-sm text-gray-600">Thiết bị boeing 787-9</p>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Segment 2 -->
+                                                <div class="flex gap-6 pb-8 relative">
+                                                    <!-- Time column -->
+                                                    <div class="text-right pt-2" style="min-width: 80px;">
+                                                        <p class="text-2xl font-bold text-accent">00:35</p>
+                                                        <p class="text-sm text-gray-600">17 tháng 12</p>
+                                                    </div>
+
+                                                    <!-- Divider with icon -->
+                                                    <div class="flex flex-col items-center" style="min-width: 30px;">
+                                                        <img src="image/plane_end.svg" alt="" class="w-6 h-6 mb-2">
+                                                        <div class="flex-1 border-l-2 border-dashed border-gray-300" style="height: 120px;"></div>
+                                                    </div>
+
+                                                    <!-- Info column -->
+                                                    <div class="flex-1 pt-2">
+                                                        <h3 class="font-bold text-lg mb-2">Sân bay quốc tế Zayed International, AUH</h3>
+                                                        <p class="text-sm text-gray-600">Nhà ga A</p>
+                                                        <p class="text-sm text-gray-600">Dừng lại ở Abu Dhabi</p>
+                                                        <p class="text-sm text-gray-600">2 giờ 10 phút</p>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Segment 3 -->
+                                                <div class="flex gap-6 pb-8 relative">
+                                                    <!-- Time column -->
+                                                    <div class="text-right pt-2" style="min-width: 80px;">
+                                                        <p class="text-2xl font-bold text-accent">02:45</p>
+                                                        <p class="text-sm text-gray-600">17 tháng 12</p>
+                                                    </div>
+
+                                                    <!-- Divider with icon -->
+                                                    <div class="flex flex-col items-center" style="min-width: 30px;">
+                                                        <img src="image/plane_start.svg" alt="" class="w-6 h-6 mb-2">
+                                                        <div class="flex-1 border-l-2 border-dashed border-gray-300" style="height: 120px;"></div>
+                                                    </div>
+
+                                                    <!-- Info column -->
+                                                    <div class="flex-1 pt-2">
+                                                        <h3 class="font-bold text-lg mb-2">Sân bay quốc tế Zayed International, AUH</h3>
+                                                        <p class="text-sm text-gray-600">Nhà ga A</p>
+                                                        <p class="text-sm text-gray-600">7 giờ 55 phút</p>
+                                                        <p class="text-sm text-gray-600">EY 61</p>
+                                                        <p class="text-sm text-gray-600">Etihad</p>
+                                                        <p class="text-sm text-gray-600">Thiết bị airbus a380</p>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Segment 4 (Final) -->
+                                                <div class="flex gap-6">
+                                                    <!-- Time column -->
+                                                    <div class="text-right pt-2" style="min-width: 80px;">
+                                                        <p class="text-2xl font-bold text-accent">06:40</p>
+                                                        <p class="text-sm text-gray-600">17 tháng 12</p>
+                                                    </div>
+
+                                                    <!-- Divider with icon -->
+                                                    <div class="flex flex-col items-center" style="min-width: 30px;">
+                                                        <img src="image/plane_end.svg" alt="" class="w-6 h-6 mb-2">
+                                                    </div>
+
+                                                    <!-- Info column -->
+                                                    <div class="flex-1 pt-2">
+                                                        <h3 class="font-bold text-lg mb-2">Sân bay Heathrow, LHR</h3>
+                                                        <p class="text-sm text-gray-600">Nhà ga 4</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--kết thúc Modal hành trình bay -->
+
                                     <div
                                         class="grid grid-cols-8 max-sm:grid-cols-1 items-center items-stretch gap-4 max-sm:gap-1 h-full">
                                         <div
@@ -1232,7 +1346,7 @@
                                                         </div>
                                                     </div>
                                                     <div
-                                                        class="text-accent text-2xl font-bold hidden max-sm:block max-sm:text-base
+                                                        class="text-accent text-2xl font-bold hidden max-sm:block max-sm:text-sm
 
 ">
                                                         6.020.000 VNĐ
@@ -1263,7 +1377,7 @@
                                                             class="text-base font-bold">HAN</p>
                                                     </div>
                                                     <div
-                                                        class="flex flex-col items-center">
+                                                        class="flex flex-col items-center open-modal cursor-pointer">
                                                         <p
                                                             class="text-xs text-[#878C93]">2h10m</p>
                                                         <img
@@ -1384,8 +1498,9 @@
                                                 </div>
                                             </div>
                                         </div>
-
                                     </div>
+
+                                 
 
                                     <div
                                         class="hidden relative list-card-price bg-bg-info rounded-xl p-5 flex justify-between items-center overflow-hidden">
@@ -1524,6 +1639,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                
                             </div>
 
                         </div>

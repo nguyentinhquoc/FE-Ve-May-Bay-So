@@ -11,6 +11,30 @@ planeItems.forEach((planeItem) => {
             listCardPrice.classList.toggle("hidden");
         });
     });
+
+    const openModal = planeItem.querySelector(".open-modal");
+    if (openModal) {
+        openModal.addEventListener("click", () => {
+            const journeyModal = planeItem.querySelector(".modal-journey");
+            journeyModal.classList.remove("hidden");
+            journeyModal.classList.add("flex");
+
+        });
+    }
+
+    const journeyModal = planeItem.querySelector(".modal-journey");
+    if (journeyModal) {
+        const closeBtn = journeyModal.querySelector(".close-modal");
+        closeBtn.addEventListener("click", () => {
+            journeyModal.classList.add("hidden");
+        });
+
+        journeyModal.addEventListener("click", (e) => {
+            if (e.target === journeyModal) {
+                journeyModal.classList.add("hidden");
+            }
+        });
+    }
 });
 
 

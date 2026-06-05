@@ -2285,6 +2285,15 @@
             max-height: 100vh;
         }
     }
+    .max-h-\[90vh\] {
+        max-height: 90vh;
+    }
+
+    .max-lg\:max-h-\[90vh\] {
+        @media (max-width: 63.9375rem) {
+            max-height: 90vh;
+        }
+    }
 
     .max-lg\:w-2\/3 {
         @media (width < 64rem) {
@@ -3198,6 +3207,7 @@ body {
 }
 
 
+
 .days div span.lunar {
     display: block;
     font-size: 10px;
@@ -3260,7 +3270,7 @@ body {
         transition: 0.2s;
         position: relative;
         margin: 8px 0;
-        font-size: 11px;
+        font-size: 13px;
         height: fit-content;
     }
 
