@@ -3,9 +3,13 @@ const listCardPrices = document.querySelectorAll(".list-card-price");
 const planeItems = document.querySelectorAll(".plane-items");
 
 planeItems.forEach((planeItem) => {
-    planeItem.querySelector(".detail").addEventListener("click", () => {
-        const listCardPrice = planeItem.querySelector(".list-card-price");
-        listCardPrice.classList.toggle("hidden");
+    planeItem.querySelectorAll(".detail").forEach((element) => {
+        element.addEventListener("click", () => {
+            console.log(123)
+            const listCardPrice = planeItem.querySelector(".list-card-price");
+            console.log(listCardPrice)
+            listCardPrice.classList.toggle("hidden");
+        });
     });
 });
 
