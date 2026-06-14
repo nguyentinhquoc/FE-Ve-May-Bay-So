@@ -908,18 +908,214 @@
                 <div class="flight-list col-span-3  max-xl:col-span-4 ">
                     <div class="flex flex-col gap-4">
                         <div class="flex flex-col gap-4 plane-items-selected" id="plane-items-selected">
-                            <section class="shadow-[0_8px_20px_rgba(0,0,0,0.15)] rounded-xl overflow-hidden hidden"
-                                id="select-out-bound"></section>
-                            <section class="shadow-[0_8px_20px_rgba(0,0,0,0.15)] rounded-xl overflow-hidden hidden"
-                                id="select-in-bound"></section>
+                            <section class="shadow-[0_8px_20px_rgba(0,0,0,0.15)] rounded-xl overflow-hidden"
+                                id="select-out-bound" data-session="1291" data-codeairline="VJ"
+                                data-keybooking="oqK13ZVMX9j8xAixVZ0gYrb03IOfvSoMZKqeSeH¥xuNESHRPGapPtqZoCdiuxMCw1zg50SzctYV9gkVMhN1m6AQOUVnVWdxYBF4vszKzxiSAiwwjpzY4pBpYkMqr9LkƒKyhokCMPvMIMK6xm31hdALPDbqmiAVD4XABns4LgodY6NB9EQP9CFbPuEnq¥12PS4W2c2l8URZdzmvKnmZv¥uyfLOIxiy5XaqyMFQ4YEEMmvPa1ydnYnvcE0LR1PFUoWSvtFoSox0KQhAhkuE5aRd¥gYPxfTSLtAEgVwBftwTt8=_pfMr39aPiNfNdix3Np9LWSyizlE¥Kxd6rMOIzEIjQzJXIƒLP523Usbi0mƒxubp1hoJpAtvLvZlfANRXcEtZurq2FD0uV2aR0IfH5hmHxRSd1nxxwe7E4Fh0zcyu0eO3Xp7qh0q5nDhwbFejhq5¥N¥RXxu4pqIjsrVFxfQtlmdpfnR5mJMfG7v5mcoekaIaFJBcvIc2qYtJII6ewYt4AM1GuRbqW6LT3D4OaQr9w2H2Bcc5qfmy5lzAAUEOqTlqVm5v1sP¥oJg1gQiziIeLWPtavcs31q95Qƒ7BmhMx6qkAaUEJKfzJqwelYP¥AeiicSƒT0GyK9esObMPv9gIdxvgmP7RvalofC¥9Q5MGmAzJb3hWO6687P2Kz6fc0Li7REMxMHBWw1h9kkQo0ttlzsSPvOXR7nNbQsIU9iKJ4QuNfHQlTp¥aP9sAIXZ0uqHKLJDbj4c8OKE8DWyDURYbtxOA6OrcybY9ƒmMmF21Dl5E2NGxPBF52YnLN8RcapW5Bd¥JƒKasxkI0Bvƒjv8FHmaHIpRWHTeJsoVaqdnsoKyGl78aMV931Rƒ0Vx7h¥X4cu9289aTDWAoxsGM3mteJzJu7a1dQ=="
+                                data-way="OutBound" data-total-price="1954400,0000">
+                                <div
+                                    class="bg-primary text-white flex max-lg:flex-wrap items-start justify-between px-4 py-1.5 cursor-pointer select-none clicked">
+                                    <div>
+                                        <p class="font-bold text-base">Chuyến bay : Hà Nội → Hồ Chí Minh</p>
+                                        <p class="text-base">
+                                            <span class="max-md:block">Thứ 6, ngày 26 tháng 6</span>
+                                            <span class="ml-3 max-md:ml-0 max-md:block ">06:00 - 08:10 (2h10m, điểm dừng
+                                                0)</span>
+                                        </p>
+                                    </div>
+                                    <div class="flex flex-col items-center min-h-15 justify-between p-1 gap-2">
+                                        <p class="text-sm font-bold max-lg:mt-2">Hạng vé: Deluxe1(DLX)</p>
+                                        <button
+                                            class="text-white px-4 py-1 uppercase bg-highlight font-bold rounded-br-3xl rounded-tl-3xl"
+                                            onclick="changeSelectedFlight(0)">
+                                            Thay đổi
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-cols-5 max-lg:grid-cols-2 max-md:block p-4">
+                                    <div class="flex flex-col max-lg:col-span-2 gap-4 max-lg:mb-5">
+                                        <div class="flex gap-3 items-start">
+                                            <div>
+                                                <img src="/Content/img/Airline/smVJ.gif" alt="" class="w-10">
+                                            </div>
+                                            <div class="text-sm">
+                                                <p class="font-bold">VietJet Air</p>
+                                                <p>VJ121 - Plane: 321</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="flex col-span-2 max-lg:col-span-1 gap-2 items-start justify-center max-md:justify-start max-md:mb-5">
+                                        <div>
+                                            <img src="/Content/img/flight-info/plane-start.svg" alt="">
+                                        </div>
+                                        <div>
+                                            <div class="font-bold text-2xl">
+                                                <p>HAN - (Hà Nội)</p>
+                                                <p>Nội Bài</p>
+                                            </div>
+                                            <p class="text-base">Thứ 6, 26/06/2026 - 06:00</p>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="flex col-span-2 max-lg:col-span-1 gap-2 items-start justify-center max-md:justify-start">
+                                        <div>
+                                            <img src="/Content/img/flight-info/plane-end.svg" alt="">
+                                        </div>
+                                        <div>
+                                            <div class="font-bold text-2xl">
+                                                <p>SGN - (Hồ Chí Minh)</p>
+                                                <p>Tân Sơn Nhất</p>
+                                            </div>
+                                            <p class="text-base">Thứ 6, 26/06/2026 - 08:10</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="border-t border-[#EBA00A] border-dotted py-4 px-10 flex justify-between gap-10 max-md:flex-col max-md:gap-5 conditions">
+                                    <div class="flex gap-1.5">
+                                        <div><img src="/Content/img/flight-info/bag.svg" alt=""></div>
+                                        <div>
+                                            <p class="text-base">Thông tin hành lý</p>
+                                            <ul class="my-1 text-sm">
+                                                <li>Mỗi hành khách có 7kg và 20kg</li>
+                                            </ul>
+                                            <p class="text-[#878C93] text-sm">(Tổng hành lý đã bao gồm trong giá)</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex gap-1.5">
+                                        <div><img src="/Content/img/flight-info/ticket.svg" alt=""></div>
+                                        <div>
+                                            <p class="text-base">Điều kiện vé</p>
+                                            <ul class="my-1 text-sm max-sm:text-[10px]">
+                                                <li>Hành lý xách tay 7kg</li>
+                                                <li>Hành lý ký gửi 20kg</li>
+                                                <li>Được phép Thay đổi chuyến bay/ hành trình (Trước giờ khởi hành tối
+                                                    thiểu 03 tiếng) miễn phí + chênh lệch giá vé (nếu có)</li>
+                                                <li>Không được phép Thay đổi chuyến bay/ hành trình (Trong vòng 03 tiếng
+                                                    trước giờ khởi hành và sau giờ khởi hành)</li>
+                                                <li>Không được phép Đổi tên</li>
+                                                <li>Được Hoàn bảo lưu định danh Tiền Vé. Thông báo trước ít nhất 24 giờ
+                                                    so với giờ khởi hành dự kiến. Bảo lưu tiền vé tối đa 01 năm kể từ
+                                                    ngày khởi hành của chuyến bay</li>
+                                            </ul>
+                                            <p class="text-[#878C93] text-sm">Cabin: Economy.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="shadow-[0_8px_20px_rgba(0,0,0,0.15)] rounded-xl overflow-hidden"
+                                id="select-in-bound" data-session="1291" data-codeairline="VJ"
+                                data-keybooking="oqK13ZVMX9j8xAixVZ0gYrb03IOfvSoMZKqeSeH¥xuNESHRPGapPtqZoCdiuxMCw1zg50SzctYV9gkVMhN1m6AQOUVnVWdxYBF4vszKzxiSAiwwjpzY4pBpYkMqr9LkƒKyhokCMPvMIMK6xm31hdALPDbqmiAVD4XABns4LgodY6NB9EQP9CFbPuEnq¥12PSDJVZUGEaGsfShEqwQusbEQadVrs¥5P6l1kD3CS3a4SkbiJfnDJoPW6B5X7Z7H70nstfiVURƒrPM9YiBzHVHWQVFxtUmePNSGTrhhkfWoWLM=_ol7ZrItovqILg9XUuJNG1wwgNjAQ41vR6UhbF6WU0Ct7HGVkM6CNTPRQdXz5X38oEUƒQJuoƒHDUhYMVJo80ypSJD1IGvhtpTkG7daTIZMhzTd1tfOorFEtxPgVUMMBs40Kl6JS3lcghz0xxBZ294bZXFXLK1XnEqXSMwLGCtiLhormPmZovZv7WpDjt3kUqsKLyFWQcJUF3aygpgTELzTS8rr4pmUQi6a9r5iAHK3f61kXbOW6rqnVd8JuJwcyhrXAJalUcA¥fCƒU93rK2BRbRPxoXtDhbVkRiOyaRqKsja¥F39z5WfwJmODJSGZ6SVESC3elaghZe5wXmxS¥k4MmEBXG6ZHa3sJgBlnv2zA946vMBwƒ¥OeMdxpe0ƒKG5FOFbcq3q0qKosfXChd46TwXW8SSEd2QGoKZL7CVowT¥jm38VfnSIFf4hOzOwwoESuhleh81t8jXdRFkm1G0XnJ2ƒsYDUED6M10eMqh1vwf3L54xN9QhV3¥9YUjnafz8EZagui3dsƒCUTBZRCQnF¥gGBkGMzwDTea09XSmUektoQ¥¥VYdh2UmC3¥NFZ4dahRcJdqOUl5b81xBb¥p2iRtJGyCZA=="
+                                data-way="InBound" data-total-price="1695200,0000">
+                                <div
+                                    class="bg-primary text-white flex max-lg:flex-wrap items-start justify-between px-4 py-1.5 cursor-pointer select-none clicked">
+                                    <div>
+                                        <p class="font-bold text-base">Chuyến bay : Hồ Chí Minh → Hà Nội</p>
+                                        <p class="text-base">
+                                            <span class="max-md:block">Thứ 4, ngày 8 tháng 7</span>
+                                            <span class="ml-3 max-md:ml-0 max-md:block ">20:40 - 22:55 (2h15m, điểm dừng
+                                                0)</span>
+                                        </p>
+                                    </div>
+                                    <div class="flex flex-col items-center min-h-15 justify-between p-1 gap-2">
+                                        <p class="text-sm font-bold max-lg:mt-2">Hạng vé: Deluxe1(DLX)</p>
+                                        <button
+                                            class="text-white px-4 py-1 uppercase bg-highlight font-bold rounded-br-3xl rounded-tl-3xl"
+                                            onclick="changeSelectedFlight(1)">
+                                            Thay đổi
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-cols-5 max-lg:grid-cols-2 max-md:block p-4">
+                                    <div class="flex flex-col max-lg:col-span-2 gap-4 max-lg:mb-5">
+                                        <div class="flex gap-3 items-start">
+                                            <div>
+                                                <img src="/Content/img/Airline/smVJ.gif" alt="" class="w-10">
+                                            </div>
+                                            <div class="text-sm">
+                                                <p class="font-bold">VietJet Air</p>
+                                                <p>VJ158 - Plane: 321</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="flex col-span-2 max-lg:col-span-1 gap-2 items-start justify-center max-md:justify-start max-md:mb-5">
+                                        <div>
+                                            <img src="/Content/img/flight-info/plane-start.svg" alt="">
+                                        </div>
+                                        <div>
+                                            <div class="font-bold text-2xl">
+                                                <p>SGN - (Hồ Chí Minh)</p>
+                                                <p>Tân Sơn Nhất</p>
+                                            </div>
+                                            <p class="text-base">Thứ 4, 08/07/2026 - 20:40</p>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="flex col-span-2 max-lg:col-span-1 gap-2 items-start justify-center max-md:justify-start">
+                                        <div>
+                                            <img src="/Content/img/flight-info/plane-end.svg" alt="">
+                                        </div>
+                                        <div>
+                                            <div class="font-bold text-2xl">
+                                                <p>HAN - (Hà Nội)</p>
+                                                <p>Nội Bài</p>
+                                            </div>
+                                            <p class="text-base">Thứ 4, 08/07/2026 - 22:55</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="border-t border-[#EBA00A] border-dotted py-4 px-10 flex justify-between gap-10 max-md:flex-col max-md:gap-5 conditions">
+                                    <div class="flex gap-1.5">
+                                        <div><img src="/Content/img/flight-info/bag.svg" alt=""></div>
+                                        <div>
+                                            <p class="text-base">Thông tin hành lý</p>
+                                            <ul class="my-1 text-sm">
+                                                <li>Mỗi hành khách có 7kg và 20kg</li>
+                                            </ul>
+                                            <p class="text-[#878C93] text-sm">(Tổng hành lý đã bao gồm trong giá)</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex gap-1.5">
+                                        <div><img src="/Content/img/flight-info/ticket.svg" alt=""></div>
+                                        <div>
+                                            <p class="text-base">Điều kiện vé</p>
+                                            <ul class="my-1 text-sm max-sm:text-[10px]">
+                                                <li>Hành lý xách tay 7kg</li>
+                                                <li>Hành lý ký gửi 20kg</li>
+                                                <li>Được phép Thay đổi chuyến bay/ hành trình (Trước giờ khởi hành tối
+                                                    thiểu 03 tiếng) miễn phí + chênh lệch giá vé (nếu có)</li>
+                                                <li>Không được phép Thay đổi chuyến bay/ hành trình (Trong vòng 03 tiếng
+                                                    trước giờ khởi hành và sau giờ khởi hành)</li>
+                                                <li>Không được phép Đổi tên</li>
+                                                <li>Được Hoàn bảo lưu định danh Tiền Vé. Thông báo trước ít nhất 24 giờ
+                                                    so với giờ khởi hành dự kiến. Bảo lưu tiền vé tối đa 01 năm kể từ
+                                                    ngày khởi hành của chuyến bay</li>
+                                            </ul>
+                                            <p class="text-[#878C93] text-sm">Cabin: Economy.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
                             <div
                                 class="bg-[#CAF0F8] shadow-[0_8px_20px_rgba(0,0,0,0.15)] rounded-xl overflow-hidden py-4 px-10 flex  justify-between gap-10 max-md:flex-col max-md:gap-5 conditions">
                                 <div class="flex justify-between items-center" style=" width: 100%;">
                                     <div>
-                                        <p class="min-w-[127px] text-end text-[22px] text-accent leading-5.5 price">
-                                            <span class="font-bold">Tổng
-                                                tiền: </span><span id="display-price-order">0
-                                                VNĐ</span>
+                                        <p class="min-w-[127px] text-start text-[22px] text-accent leading-5.5 price"
+                                            style="line-height: 26px;">
+                                            <span class="font-bold max-sm:hidden">Tổng tiền: </span>
+                                            <span id="display-price-order">3,649,600 VNĐ</span>
                                         </p>
                                     </div>
                                     <div>
